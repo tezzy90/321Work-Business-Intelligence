@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Branding & SEO -->
+    <title>321work | Structured Intelligence</title>
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <meta name="description" content="321work acts as the operational and analytical infrastructure for high-impact technology projects. Incubating AridInsights.">
+    <meta name="keywords" content="venture studio, technology incubator, business intelligence, climate tech, water scarcity solutions, startup infrastructure, Orlando tech, Cortez Fields, stealth mode startup, analytics">
+    <meta name="author" content="Cortez Fields">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Mobile UI Polish -->
+    <meta name="theme-color" content="#1a1a1a">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Social Sharing (Open Graph - LinkedIn/Facebook) -->
+    <meta property="og:title" content="321work | Structured Intelligence">
+    <meta property="og:description" content="Operational and analytical infrastructure for high-impact technology projects. Incubating AridInsights.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://321work.com">
+    <meta property="og:site_name" content="321work">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Social Sharing (Twitter Card) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="321work | Structured Intelligence">
+    <meta name="twitter:description" content="Operational and analytical infrastructure for high-impact technology projects.">
+    
+    <!-- Scripts & Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // Enables toggling via a class on the HTML tag
+        theme: {
+          extend: {
+            colors: {
+              charcoal: '#1a1a1a',
+              electric: '#00f0ff', // Electric Blue/Teal variant
+              offwhite: '#e5e5e5',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['Space Mono', 'monospace'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 1s ease-out forwards',
+              'slide-up': 'slideUp 0.8s ease-out forwards',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        overscroll-behavior-y: none;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <!-- IMPORTANT: This script tag links your React code to the HTML for Vite -->
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
