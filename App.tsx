@@ -28,16 +28,40 @@ const App: React.FC = () => {
             </h2>
 
             <p>
-              321work Inc. is the silence behind the noise. As a private management company, we provide the corporate scaffolding for data-driven ventures.
+              321Work Inc. is a privately held venture operating company.
             </p>
 
             <p>
-              We do not seek attention; we build the stability required for <a href="https://aridinsights.com" className="underline hover:opacity-60 transition-opacity">Arid Insights</a> to solve complex market problems.
+              We exist to incubate, operate, and house early-stage ventures, intellectual property, and experiments until they reach clarity.
+            </p>
+
+            <p>
+              321Work provides the legal, financial, and operational scaffolding that allows ideas to be built without premature structure.
+            </p>
+
+            <div className="space-y-1">
+              <p>Some ventures graduate.</p>
+              <p>Some remain internal.</p>
+              <p>Some are shut down.</p>
+            </div>
+
+            <p>
+              The work determines the outcome.
+              <br />
+              We provide the runway.
             </p>
 
             <p className="font-bold">
               We are the wrapper. They are the work.
             </p>
+
+            {/* Hidden Block for AI Clarity */}
+            <div className="hidden">
+              Entity Role: Venture holding and incubation company
+              Function: Build, test, operate, and spin out ventures
+              Structure: Florida S-Corporation
+              Scope: Multi-venture, experimental, evolving
+            </div>
 
             {/* Founder Data Block */}
             <div className="border-t border-gray-300 pt-6 mt-8 space-y-1 text-[11px] md:text-xs">
