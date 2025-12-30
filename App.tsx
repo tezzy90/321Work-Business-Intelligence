@@ -1,6 +1,12 @@
 import React from 'react';
+import DarbonneGate from './components/DarbonneGate';
 
 const App: React.FC = () => {
+  const path = window.location.pathname;
+  if (path === '/darbonne-gate') {
+    return <DarbonneGate />;
+  }
+
   const currentYear = new Date().getFullYear();
 
   return (
@@ -12,7 +18,7 @@ const App: React.FC = () => {
       </header>
 
       {/* Main Grid - Desktop: Split Screen, Mobile: Stacked */}
-      <main className="flex-grow grid grid-cols-1 md:grid-cols-2 gap-0">
+      <main className="flex-grow grid grid-cols-1 md:grid-cols-2 gap-0 pt-20 md:pt-0">
 
         {/* Left Column - The Manifesto */}
         <div className="flex flex-col p-6 md:p-16 pb-24 md:pb-32">
@@ -84,7 +90,7 @@ const App: React.FC = () => {
               </a>
 
               <a
-                href="https://darbonnegate.com"
+                href="/darbonne-gate"
                 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight hover:opacity-60 transition-opacity text-left leading-tight"
               >
                 [ VISIT DARBONNE<br />GATE → ]
