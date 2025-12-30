@@ -60,10 +60,6 @@ const App: React.FC = () => {
                 <span>Principal, 321work Inc.</span>
                 <span className="text-gray-500">Est. 2019</span>
               </p>
-              <p className="flex justify-between">
-                <span>Principal, Arid Insights</span>
-                <span className="text-gray-500">Est. 2025</span>
-              </p>
             </div>
           </div>
         </div>
