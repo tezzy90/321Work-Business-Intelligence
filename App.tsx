@@ -15,10 +15,10 @@ const App: React.FC = () => {
       <main className="flex-grow grid grid-cols-1 md:grid-cols-2 gap-0">
 
         {/* Left Column - The Manifesto */}
-        <div className="flex flex-col justify-end p-6 md:p-16 pb-24 md:pb-32">
+        <div className="flex flex-col p-6 md:p-16 pb-24 md:pb-32">
 
           {/* Negative Space (40% on desktop) */}
-          <div className="hidden md:block h-[40vh]" />
+          <div className="hidden md:block h-[40vh] shrink-0" />
 
           {/* The Foundation Text */}
           <div className="max-w-md font-mono text-xs md:text-sm leading-relaxed space-y-6">
@@ -35,21 +35,11 @@ const App: React.FC = () => {
               We exist to incubate, operate, and house early-stage ventures, intellectual property, and experiments until they reach clarity.
             </p>
 
-            <p>
-              321Work provides the legal, financial, and operational scaffolding that allows ideas to be built without premature structure.
-            </p>
-
             <div className="space-y-1">
               <p>Some ventures graduate.</p>
               <p>Some remain internal.</p>
               <p>Some are shut down.</p>
             </div>
-
-            <p>
-              The work determines the outcome.
-              <br />
-              We provide the runway.
-            </p>
 
             <p className="font-bold">
               We are the wrapper. They are the work.
@@ -79,13 +69,32 @@ const App: React.FC = () => {
         </div>
 
         {/* Right Column - The CTA */}
-        <div className="flex items-center justify-center p-6 md:p-16 bg-white">
-          <a
-            href="https://aridinsights.com"
-            className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight hover:opacity-60 transition-opacity text-center leading-tight"
-          >
-            [ VISIT ARID<br />INSIGHTS → ]
-          </a>
+        <div className="flex flex-col p-6 md:p-16 bg-white">
+
+          {/* Negative Space to align with Left Column */}
+          <div className="hidden md:block h-[40vh] shrink-0" />
+
+          <div className="flex flex-col">
+            <h2 className="text-base md:text-lg font-bold tracking-wider mb-6 font-mono hidden md:block">
+              FEATURED VENTURES
+            </h2>
+
+            <div className="flex flex-col space-y-8 md:space-y-12 justify-center flex-grow">
+              <a
+                href="https://aridinsights.com"
+                className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight hover:opacity-60 transition-opacity text-left leading-tight"
+              >
+                [ VISIT ARID<br />INSIGHTS → ]
+              </a>
+
+              <a
+                href="https://darbonnegate.com"
+                className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight hover:opacity-60 transition-opacity text-left leading-tight"
+              >
+                [ VISIT DARBONNE<br />GATE → ]
+              </a>
+            </div>
+          </div>
         </div>
 
       </main>
